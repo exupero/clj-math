@@ -1,4 +1,4 @@
-(ns clj-math.core)
+(ns math.core)
 
 (def abs #?(:clj #(Math/abs %) :cljs js/Math.abs))
 (def acos #?(:clj #(Math/acos %) :cljs js/Math.acos))
@@ -49,5 +49,6 @@
 (def ln10 #?(:clj (log 10) :cljs js/Math.LN10))
 (def log2e #?(:clj (/ (log Math/E) (log 2)) :cljs js/Math.LOG2E))
 (def pi #?(:clj Math/PI :cljs js/Math.PI))
+(def tau (* 2 pi))
 (def sqrt-half #?(:clj (Math/sqrt (/ 1 2)) :cljs js/Math.SQRT1_2))
 (def sqrt-2 #?(:clj (Math/sqrt 2) :cljs js/Math.SQRT2))
