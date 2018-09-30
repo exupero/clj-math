@@ -32,7 +32,7 @@
                   (* mult v1)))))))))
 
 (defn random-normal [rng mean stdev]
-  (+ mean (* stddev (next-gaussian rng))))
+  (+ mean (* stdev (next-gaussian rng))))
 
 (defn random-power-law [rng [x0 x1] n]
   (fn []
